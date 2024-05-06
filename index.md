@@ -22,8 +22,7 @@ SQL是結構化查詢語言Structured Query Language的縮寫
 - TEXT
 - BLOB：根據MySQL的語法表示，是儲存二進制文件用的。如：圖片、影片、檔案之類的
 - DATETIME：儲存時間的格式（yyyy-MM-DD hh:mm:ss.ms）
-- BOOLEAN：SQLite沒這個東西，所以要用整數0(假)或1(真)來儲存。官網有寫從2018-04-02的版本開始已經可以認得"TURE"跟"FALSE"了 ~~，但不知道可以幹嘛~~
-
+- BOOLEAN：SQLite沒這個東西，所以要用整數0(假)或1(真)來儲存。官網有寫從2018-04-02的版本開始已經可以認得"TRUE"跟"FALSE"了 ~~，但不知道可以幹嘛~~
 
 ### 建立資料表
 
