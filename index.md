@@ -28,7 +28,7 @@ SQL是結構化查詢語言Structured Query Language的縮寫
 
 ![""](./images/NuGet已安裝.png)
 
-## .NET
+## .NET指令環境(終端機、VSCode)
 
 終端機進入到專案資料夾中
 
