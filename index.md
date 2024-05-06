@@ -12,7 +12,31 @@ SQL是結構化查詢語言Structured Query Language的縮寫
 
 [SQLite官網](https://www.sqlite.org/index.html)
 
-## 常用指令
+# .NET環境安裝SQLite套件
+
+## Visual Studio
+
+打開NuGet套件管理視窗
+
+搜尋：SQLite
+
+安裝「System.Data.SQLite」
+
+其他還有像是System.Data.SQLite.Core、System.Data.SQLite.Linq的功能
+
+我目前還沒用到，所以就沒裝了
+
+![""](./images/NuGet已安裝.png)
+
+## .NET
+
+終端機進入到專案資料夾中
+
+輸入指令：dotnet add package System.Data.SQLite
+
+![""](./images/NuGet指令安裝.png)
+
+# 常用指令
 
 ### SQLite資料型態
 
@@ -48,3 +72,4 @@ CREATE TABLE IF NOT EXISTS ExampleTable (_AI INTEGER PRIMARY KEY AUTOINCREMENT,T
 
 執行結果
 ![Image](./images/建立資料表.png)
+
