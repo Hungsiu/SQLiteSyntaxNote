@@ -1,6 +1,10 @@
 # SQL語法
 
-每次要用SQL語法時都還要查老半天，應該是下次要用SQL時已經不知道過了幾百年了，所以把常用的語法整理到這頁要找比較方便
+這篇只針對SQLite喔
+
+每次要用SQLite語法時都還要查老半天，應該是下次要用SQLite時已經不知道過了幾百年了，所以把常用的語法整理到這頁要找比較方便
+
+[SQLite官網(嗎?)](https://www.sqlite.org/index.html)
 
 ## SQL簡介
 
@@ -8,10 +12,18 @@ SQL是結構化查詢語言Structured Query Language的縮寫
 
 [維基百科](https://zh.wikipedia.org/zh-tw/SQL)
 
-
-資料庫(Database)：是組織和儲存資料的集合。可以包含一個以上的表
-
 ## 常用指令
+
+### SQLite資料型態
+
+- NULL
+- INTEGER
+- REAL
+- TEXT
+- BLOB：根據MySQL的語法表示，是儲存二進制文件用的。如：圖片、影片、檔案之類的
+- DATETIME：儲存時間的格式（yyyy-MM-DD hh:mm:ss.ms）
+- BOOLEAN：SQLite沒這個東西，所以要用整數0(假)或1(真)來儲存。官網有寫從2018-04-02的版本開始已經可以認得"TURE"跟"FALSE"了，但不知道可以幹嘛
+
 
 ### 建立資料表
 
