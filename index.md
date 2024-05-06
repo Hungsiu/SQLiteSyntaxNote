@@ -22,7 +22,7 @@ SQL是結構化查詢語言Structured Query Language的縮寫
 
 安裝「System.Data.SQLite」
 
-其他還有像是System.Data.SQLite.Core、System.Data.SQLite.Linq的功能
+其他還有像是System.Data.SQLite.Core、System.Data.SQLite.Linq的東西可以安裝
 
 我目前還沒用到，所以就沒裝了
 
