@@ -74,8 +74,8 @@ CREATE TABLE IF NOT EXISTS ExampleTable (_AI INTEGER PRIMARY KEY AUTOINCREMENT,T
 - Topic：是一個TEXT型態的欄位，可以儲存字串資料
 - Message：是一個TEXT型態的欄位，可以儲存字串資料
 
-![Image](./images/建立資料表.png)
 建立表格執行結果
+![Image](./images/建立資料表.png)
 
 ## 插入資料
 
@@ -88,6 +88,5 @@ SELECT `Topic`,`Message` FROM `MyTable`
 
 從MyTable中篩選出Topic及Message欄位的資料
 
-![Image](./images/Select查詢結果_1.png)
-
 執行結果
+![Image](./images/Select查詢結果_1.png)
