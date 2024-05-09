@@ -8,8 +8,6 @@ SQL是結構化查詢語言Structured Query Language的縮寫
 
 [維基百科](https://zh.wikipedia.org/zh-tw/SQL)
 
-# SQL語法
-
 這篇只針對SQLite喔
 
 每次要用SQLite語法時都還要查老半天，應該是下次要用SQLite時已經不知道過了幾百年了，所以把常用的語法整理到這頁要找比較方便
@@ -42,7 +40,7 @@ SQL是結構化查詢語言Structured Query Language的縮寫
 
 # 常用指令
 
-### SQLite資料型態
+## SQLite資料型態
 
 - NULL
 - INTEGER
@@ -52,7 +50,7 @@ SQL是結構化查詢語言Structured Query Language的縮寫
 - DATETIME：儲存時間的格式（yyyy-MM-DD hh:mm:ss.ms）
 - BOOLEAN：SQLite沒這個東西，所以要用整數0(假)或1(真)來儲存。官網有寫從2018-04-02的版本開始已經可以認得"TRUE"跟"FALSE"了 ~~，但不知道可以幹嘛~~
 
-### 建立資料表
+## 建立資料表
 
 ```sql
 CREATE TABLE ExampleTable (_AI INTEGER PRIMARY KEY AUTOINCREMENT,Topic TEXT,Message TEXT);
@@ -77,3 +75,13 @@ CREATE TABLE IF NOT EXISTS ExampleTable (_AI INTEGER PRIMARY KEY AUTOINCREMENT,T
 執行結果
 ![Image](./images/建立資料表.png)
 
+## 插入資料
+
+
+## 查詢資料
+
+```sql
+    SELECT 欄位1,欄位2,...,欄位N FROM 表單
+```
+範例資料庫
+![File](./MyData.db)
