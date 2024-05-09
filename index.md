@@ -40,6 +40,8 @@ SQL是結構化查詢語言Structured Query Language的縮寫
 
 # 常用指令
 
+[範例資料庫](./MyData.db)
+
 ## SQLite資料型態
 
 - NULL
@@ -83,5 +85,3 @@ CREATE TABLE IF NOT EXISTS ExampleTable (_AI INTEGER PRIMARY KEY AUTOINCREMENT,T
 ```sql
     SELECT 欄位1,欄位2,...,欄位N FROM 表單
 ```
-
-[範例資料庫](./MyData.db)
