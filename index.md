@@ -83,5 +83,5 @@ CREATE TABLE IF NOT EXISTS ExampleTable (_AI INTEGER PRIMARY KEY AUTOINCREMENT,T
 ```sql
     SELECT 欄位1,欄位2,...,欄位N FROM 表單
 ```
-範例資料庫
-![File](./MyData.db)
+
+[範例資料庫](./MyData.db)
