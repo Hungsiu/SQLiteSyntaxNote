@@ -55,30 +55,34 @@ SQL是結構化查詢語言Structured Query Language的縮寫
 ## 建立資料表
 
 ```sql
-CREATE TABLE ExampleTable (_AI INTEGER PRIMARY KEY AUTOINCREMENT,Topic TEXT,Message TEXT);
+CREATE TABLE MyTable (_AI INTEGER PRIMARY KEY AUTOINCREMENT,DateTime DATETIME,Topic TEXT,Message TEXT);
 ```
 
 可以加上IF NOT EXISTS來判斷資料表是否存在，不存在才建立
 
 ```sql
-CREATE TABLE IF NOT EXISTS ExampleTable (_AI INTEGER PRIMARY KEY AUTOINCREMENT,Topic TEXT,Message TEXT);
+CREATE TABLE IF NOT EXISTS MyTable (_AI INTEGER PRIMARY KEY AUTOINCREMENT,DateTime DATETIME,Topic TEXT,Message TEXT);
 ```
 
-上述指令會建立一個新的資料表（不存在才建立）
+使用 CREATE TABLE 可以建立一個新的資料表。加上 IF NOT EXISTS 的判斷，可以確保只有在該表不存在時才會執行建立操作，避免重複建立相同名稱的資料表而導致錯誤
 
-資料表名稱為ExampleTable
+在上述SQL指令中：
 
-表中有3個欄位
-
+- 資料表名稱為MyTable
 - _AI：是一個Integer型態的主鍵，並套用AUTOINCREMENT屬性，表示在插入新資料時此欄位會自動遞增
+- DateTime：是一個DATETIME型態的欄位，可以儲存時間的資料
 - Topic：是一個TEXT型態的欄位，可以儲存字串資料
 - Message：是一個TEXT型態的欄位，可以儲存字串資料
 
-建立表格執行結果
+建立表格的執行結果如下圖所示：
 ![Image](./images/建立資料表.png)
 
 ## 插入資料
 
+```sql
+INSERT OR IGNORE INTO `MyTable` VALUES (NULL,DATETIME('now', 'localtime'),'Topic資料','Message資料')
+
+```
 
 ## 查詢資料
 
