@@ -81,8 +81,16 @@ CREATE TABLE IF NOT EXISTS MyTable (_AI INTEGER PRIMARY KEY AUTOINCREMENT,DateTi
 ## 插入資料
 
 ```sql
-INSERT OR IGNORE INTO `MyTable` VALUES (NULL,DATETIME('now', 'localtime'),'Topic資料','Message資料')
+INSERT OR IGNORE INTO `MyTable` VALUES (NULL,DATETIME('NOW', 'LOCALTIME'),'Topic資料','Message資料')
 ```
+
+使用INSERT將資料插入到MyTable的資料表中，並指定各個欄位的值。
+
+在上述SQL指令中：
+
+- OR IGNORE：表示如果插入的資料與資料表中已有的資料重複，則忽略這條插入指令，不會導致主鍵重複的錯誤。這在避免插入重複資料時很有用
+- VALUES：是指定資料表內各欄位的值
+- (NULL, DATETIME('now', 'localtime'), 'Topic資料', 'Message資料')：這是要插入的資料值的清單，按照資料表中欄位的順序進行排列。在這個例子中，它指定了四個欄位的值。第一個值是 NULL，表示主鍵_AI會自動遞增。第二個值是DATETIME('now', 'localtime')，表示目前的日期和時間。接下來的兩個值是字串'Topic資料'和'Message資料'，分別是Topic和Message欄位的值
 
 ## 查詢資料
 
