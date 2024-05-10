@@ -75,13 +75,13 @@ CREATE TABLE IF NOT EXISTS MyTable (_AI INTEGER PRIMARY KEY AUTOINCREMENT,DateTi
 - Message：是一個TEXT型態的欄位，可以儲存字串資料
 
 建立表格的執行結果如下圖所示：
+
 ![Image](./images/建立資料表.png)
 
 ## 插入資料
 
 ```sql
 INSERT OR IGNORE INTO `MyTable` VALUES (NULL,DATETIME('now', 'localtime'),'Topic資料','Message資料')
-
 ```
 
 ## 查詢資料
@@ -92,5 +92,6 @@ SELECT `Topic`,`Message` FROM `MyTable`
 
 從MyTable中篩選出Topic及Message欄位的資料
 
-執行結果
+SELECT的執行結果如下圖所示：
+
 ![Image](./images/Select查詢結果_1.png)
