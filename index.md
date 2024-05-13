@@ -78,6 +78,17 @@ CREATE TABLE IF NOT EXISTS MyTable (_AI INTEGER PRIMARY KEY AUTOINCREMENT,DateTi
 
 ![Image](./images/建立資料表.png)
 
+## 取得欄位資料
+
+```sql
+PRAGMA table_info('MyTable')
+```
+
+上述指令可以查詢在'MyTable'資料表內各欄位的資料
+
+執行結果如下：
+![Image](./images/PRAGMA執行結果.png)
+
 ## 插入資料
 
 ```sql
