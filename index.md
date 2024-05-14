@@ -40,7 +40,7 @@ SQL是結構化查詢語言Structured Query Language的縮寫
 
 # 常用指令
 
-[範例資料庫](./MyData.db)
+[範例資料庫，點我下載](./MyData.db)
 
 ## SQLite資料型態
 
