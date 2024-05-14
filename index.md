@@ -93,6 +93,7 @@ PRAGMA table_info('MyTable')
 上述指令可以查詢在MyTable資料表內各欄位的資料
 
 執行結果如下：
+
 ![Image](./images/PRAGMA執行結果.png)
 
 ## 插入資料
@@ -111,12 +112,34 @@ INSERT OR IGNORE INTO `MyTable` VALUES (NULL,DATETIME('NOW', 'LOCALTIME'),'Topic
 
 ## 查詢資料
 
+### 列出所有資料
+
+```sql
+SELECT * FROM "Mytable"
+```
+
+列出MyTable中所有資料
+
+### 列出特定欄位
+
 ```sql
 SELECT `Topic`,`Message` FROM `MyTable`
 ```
 
-從MyTable中篩選出Topic及Message欄位的資料
+從MyTable中列出Topic及Message欄位的所有資料
 
 SELECT的執行結果如下圖所示：
 
 ![Image](./images/Select查詢結果_1.png)
+
+### 加入條件搜尋
+
+```sql
+SELECT * FROM 'MyTable' WHERE `Topic`='Run'
+```
+
+從MyTable中篩選出Topic欄位是'Run'的所有資料
+
+SELECT-WHERE的執行結果如下圖所示：
+
+![Image](./images/Select查詢結果_2.png)
