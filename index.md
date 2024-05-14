@@ -134,6 +134,8 @@ SELECT的執行結果如下圖所示：
 
 ### 加入條件搜尋
 
+#### WHERE
+
 ```sql
 SELECT * FROM 'MyTable' WHERE `Topic`='Run'
 ```
@@ -143,3 +145,21 @@ SELECT * FROM 'MyTable' WHERE `Topic`='Run'
 SELECT-WHERE的執行結果如下圖所示：
 
 ![Image](./images/Select查詢結果_2.png)
+
+#### LIKE
+
+```sql
+SELECT * FROM 'MyTable' WHERE `Message` LIKE '%測試%'
+```
+
+從MyTable中篩選出Message欄位中的值包含"測試"的項目
+
+在SQL中LIKE是模糊配對的操作，可以搜尋特定格式的資料，上述例子中的%是代表萬用字元，因此可以解讀為資料中包含"測試"的所有資料
+
+題外話
+- '%測試'："測試"在句尾
+- '測試%'："測試"在句首
+
+SELECT-LIKE的執行結果如下圖所示：
+
+![Image](./images/Select查詢結果_3.png)
