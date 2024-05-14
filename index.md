@@ -8,7 +8,7 @@ SQL是結構化查詢語言Structured Query Language的縮寫
 
 [維基百科](https://zh.wikipedia.org/zh-tw/SQL)
 
-這篇只針對SQLite喔
+這篇只針對SQLite喔，有些語法可能不適用
 
 每次要用SQLite語法時都還要查老半天，應該是下次要用SQLite時已經不知道過了幾百年了，所以把常用的語法整理到這頁要找比較方便
 
