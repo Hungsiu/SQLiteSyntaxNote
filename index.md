@@ -42,6 +42,12 @@ SQL是結構化查詢語言Structured Query Language的縮寫
 
 # 常用指令
 
+SQLite也有資料庫管理軟體喔
+
+SQLiteStudio有提供建立、刪除、修改等基本功能，因此就算不是寫程式也是可以用來儲存資料。另外也有SQL語法編輯器可使用SQL指令執行，就像是個輕便而且不用安裝的MySQL呢
+
+[SQLiteStudio下載](https://sqlitestudio.pl/)
+
 [範例資料庫，點我下載](./MyData.db)
 
 ## SQLite資料型態
