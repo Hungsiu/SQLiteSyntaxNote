@@ -50,6 +50,10 @@ SQLiteStudio有提供建立、刪除、修改等基本功能，因此就算不�
 
 [範例資料庫，點我下載](./MyData.db)
 
+開啟SQL編輯器的方式如下圖
+
+!["開啟SQL編輯器的方式"](./images/SQLiteStudio開啟SQL編輯器.png)
+
 ## SQLite資料型態
 
 - NULL
